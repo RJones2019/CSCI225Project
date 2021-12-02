@@ -4,9 +4,9 @@ const navMenu = document.getElementById('nav-menu'),
     closeMenu = document.getElementById('nav-close')
 
 // SHOW
-toggleMenu.addEventListener('click', ()=>{
-    navMenu.classList.toggle('show')
-})
+toggleMenu.addEventListener('click', function () {
+        navMenu.classList.toggle('show')
+    })
 
 // HIDDEN
 closeMenu.addEventListener('click', ()=>{
