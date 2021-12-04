@@ -1,3 +1,4 @@
+(function() {
 var firebaseConfig = {
   apiKey: "AIzaSyBMOeEj9tueXDYOtlmrNE9XudXXVMe7PoU",
   authDomain: "csci-project-689af.firebaseapp.com",
@@ -11,20 +12,32 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 //Initialize Cloud Firestore through Firebase
-var db = firebase.firestore();
+var push_to_firebase = function(data){
+  alert("Thanks for leaving a comment/suggestion!")
+  var db = firebase.firestore();
 
-function storeData(){
-
-  var inputText = document.getElementById("comment").value;
-
-  db.collection("teamproject").doc().set({
-        comments: inputText
+  db.collection("teamproject").add({
+      comm: data["comm"]
   })
-  .then(function(){
-    console.log("Document successfully written");
+  .then(function(docRef) {
+      console.log("Message sent, ID: ", docRef.id);
+      location.reload();
   })
   .catch(function(error) {
-    console.error("Error writing document:  ", error);
+      console.error("Message could not be sent: ", error);
   });
+}
+
+var contact_submit = function(){
+  var comm = document.getElementById("comm");
+  
+var data = {
+    "comm": comm.value,
+
+  }
+  push_to_firebase(data);
 
 }
+
+document.getElementById("submit_msg").addEventListener("click", contact_submit);
+})();

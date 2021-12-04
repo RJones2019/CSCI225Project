@@ -21,10 +21,10 @@ firebase.initializeApp(firebaseConfig);
         lastname: data["lastname"],
         email: data["email"],
         gametime: data["gametime"],
-       // gamingcategory: data["gamingcategory"],
+        gamingcategory: data["gamingcategory"],
         kdratio: data["kdratio"],
-      //  gameconsole: data["gameconsole"],
-       // youtube: data["youtube"],
+        gameconsole: data["gameconsole"],
+        youtube: data["youtube"],
         ytname: data["ytname"],
         
     })
@@ -42,10 +42,10 @@ firebase.initializeApp(firebaseConfig);
     var lastname = document.getElementById("lastname");
     var email = document.getElementById("email");
     var gametime = document.getElementById("gametime");
-    //var gamingcategory = document.getElementById("gamingcategory");
+    var gamingcategory = document.getElementById("gamingcategory");
     var kdratio = document.getElementById("kdratio");
-  //  var gameconsole = document.getElementById("gameconsole");
-   // var youtube = document.getElementById("youtube");
+    var gameconsole = document.getElementById("gameconsole");
+    var youtube = document.getElementById("youtube");
     var ytname = document.getElementById("ytname");
     
   var data = {
@@ -53,10 +53,10 @@ firebase.initializeApp(firebaseConfig);
       "lastname": lastname.value,
       "email": email.value,
       "gametime": gametime.value,
-     // "gamingcategory": gamingcategory.value,
+      "gamingcategory": gamingcategory.value,
       "kdratio": kdratio.value,
-     // "gameconsole": gameconsole.value,
-    // "youtube": youtube.value,
+      "gameconsole": gameconsole.value,
+      "youtube": youtube.value,
       "ytname":  ytname.value,
 
     }
