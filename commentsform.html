@@ -7,6 +7,11 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
    
     <title>Connect with Aviator Gaming</title>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"
+  ></script>
 </head>
 <style>
     .comments {
@@ -39,19 +44,19 @@
             <h2>
                 <script src="https://apis.google.com/js/platform.js"></script>
 
-<div class="g-ytsubscribe" data-channelid="UCpu1PWmIwGc6TaMM3Jvc7ZA" data-layout="full" data-theme="dark" data-count="hidden"></div>
+    <div class="g-ytsubscribe" data-channelid="UCpu1PWmIwGc6TaMM3Jvc7ZA" data-layout="full" data-theme="dark" data-count="hidden"></div>
             </h2>
             <h2>
                 <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.facebook.com%2Fayeeitsdope%2F&layout=button_count&size=large&width=88&height=28&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </h2>
             <p>
-                <label for="comment">Comment/Suggestion:</label>
-                <input type="text" id="comment" name=comment placeholder="Your comments go here! We read through every comment and
+                <label for="comment" id="comment">Comment/Suggestion:</label>
+                <input type="text" id="comm" name=comment placeholder="Your comments go here! We read through every comment and
                 suggestion. AviatorGaming appreciates the time that you took to fill out the form. We also hope that you'd consider
                 applying to join our clan!">
             </p>
             <p>
-                <input type="submit" name=submit>
+                <button id="submit_btn" type="button">Submit</button>
             </p>
         </form>  
         <h1>Public Disclosure</h1>
@@ -72,5 +77,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 
 
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="js/comm.js"></script>
 </body>
 </html>

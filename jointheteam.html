@@ -39,36 +39,36 @@
                 <input type="text" name="gametime" id="gametime" placeholder="24">
             </p>
             <p>
-                <label for="gamingcategory">What types of games do you play?</label>
-                <input type="checkbox" name="gamingcategory" value="Shooters">Shooters
-                <input type="checkbox" name="gamingcategory" value="Racing">Racing
-                <input type="checkbox" name="gamingcategory" value="Advenure">Adventure
-                <input type="checkbox" name="gamingcategory" value="Horror">Horror
-                <input type="checkbox" name="gamingcategory" value="RPG">RPG
-                <input type="checkbox" name="gamingcategory" value="Fighting">Fighting
-                <input type="checkbox" name="gamingcategory" value="Sports">Sports
+                <label id="gamingcat" for= "gamingcategory">What types of games do you play?</label>
+                <input type="checkbox" name="gamingcategory" id="gamingcategory" value="Shooters">Shooters
+                <input type="checkbox" name="gamingcategory" id="gamingcategory" value="Racing">Racing
+                <input type="checkbox" name="gamingcategory" id="gamingcategory" value="Advenure">Adventure
+                <input type="checkbox" name="gamingcategory" id="gamingcategory" value="Horror">Horror
+                <input type="checkbox" name="gamingcategory" id="gamingcategory" value="RPG">RPG
+                <input type="checkbox" name="gamingcategory" id="gamingcategory" value="Fighting">Fighting
+                <input type="checkbox" name="gamingcategory" id="gamingcategory" value="Sports">Sports
             </p>
             <p>
                 <label for="rating">Average K/D ratio for shooting games (0.00-100.00):</label>
                 <input type="text" id="kdratio" name="kdratio" placeholder="2.56">
             </p>
             <p>
-                <label for="gameconsole">What is your prefered console?</label>
-                <input type="radio" class="form-check-input" name="gaming" value="Playstation">Playstation
-                <input type="radio" class="form-check-input" name="gaming" value="Xbox">Xbox
-                <input type="radio" class="form-check-input" name="gaming" value="PC">PC
-                <input type="radio" class="form-check-input" name="gaming" value="Switch">Switch
-                <input type="radio" class="form-check-input" name="gaming" value="Handheld Devices">Handheld Devices
+                <label id="gamecon" for="gameconsole">What is your prefered console?</label>
+                <input type="radio" class="form-check-input" name="gaming" id="gameconsole" value="Playstation">Playstation
+                <input type="radio" class="form-check-input" name="gaming" id="gameconsole" value="Xbox">Xbox
+                <input type="radio" class="form-check-input" name="gaming" id="gameconsole" value="PC">PC
+                <input type="radio" class="form-check-input" name="gaming" id="gameconsole" value="Switch">Switch
+                <input type="radio" class="form-check-input" name="gaming" id="gameconsole" value="Handheld Devices">Handheld Devices
             </p>
             <p>
-                <label for="youtube">Do you have a YouTube channel?</label>
-                <input type="radio" class="form-check-input" name="youtube" value="Yes">Yes
-                <input type="radio" class="form-check-input" name="youtube" value="no">No
+                <label id="yt" for="youtube">Do you have a YouTube channel?</label>
+                <input type="radio" class="form-check-input" id="youtube" name="youtube" value="Yes">Yes
+                <input type="radio" class="form-check-input" id="youtube" name="youtube" value="no">No
                 <label for="ytname">YouTube channel:</label>
                 <input type="text" id="ytname" name="ytname" placeholder="AviatorGaming">
             </p>
             <p>
-                <input type="submit" name=submit>
+                <button id="submit_msg" type="button">Submit</button>
             </p>
         </form>
         <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/178912631&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nocopyrightsounds" title="NCS" target="_blank" style="color: #cccccc; text-decoration: none;">NCS</a> · <a href="https://soundcloud.com/nocopyrightsounds/electro-light-symbolism-ncs-release" title="Electro-Light - Symbolism [NCS Release]" target="_blank" style="color: #cccccc; text-decoration: none;">Electro-Light - Symbolism [NCS Release]</a></div>
@@ -77,7 +77,17 @@
         &copy; AviatorGaming 2021
     </div>
 </div>
+    
 
 
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+
+    <script src="js/join.js"></script>
 </body>
 </html>
