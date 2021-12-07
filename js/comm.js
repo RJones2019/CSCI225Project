@@ -39,5 +39,5 @@ var data = {
 
 }
 
-document.getElementById("submit_msg").addEventListener("click", contact_submit);
+document.getElementById("submit_btn").addEventListener("click", contact_submit);
 })();
