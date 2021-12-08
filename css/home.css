@@ -117,6 +117,7 @@ img{
 
 .nav__item{
     margin-bottom: 2rem;
+    margin-right: 2rem;
 }
 
 .nav__close, .nav__link, .nav__logo, .nav__toggle{
@@ -127,9 +128,17 @@ img{
     color: var(--first-color-dark);
 }
 
+.nav__logo:hover{
+    color: var(--first-color-dark);
+}
+
 .nav__toggle{
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+.nav__logo{
+    margin-left: 2rem;
 }
 
 /* Show Menu */
@@ -153,6 +162,7 @@ img{
     position: relative;
     padding-top: 1.5rem;
     justify-self: center;
+    float: left;
     width: 502px;
     height:433px;
 }
@@ -164,10 +174,13 @@ img{
 }
 
 .home__data{
+    position: relative;
+    margin: 0 auto;
     color: var(--white-color);
 }
 
 .home__title{
+    position: relative;
     font-size: var(--big-font-size);
     line-height: 1.3;
     margin-bottom: 1rem;
@@ -212,19 +225,27 @@ img{
       margin-bottom: 0;
     }
   
+    .home_data{
+        grid-area: about;
+    }
     .home__container{
       height: 100vh;
-      grid-template-columns: repeat(2, max-content);
-      grid-template-rows:  1fr;
+      grid-template-columns: repeat(5, max-content);
+      grid-template-rows:  33.33%;
+      grid-template-areas: "empty empty empty empty" "temp img temp2 about temp3" "empty2 empty2 empty2 empty2";
       row-gap: 0;
       align-items: center;
       justify-content: center;
+      margin-top: 10%;
+      margin-left: 50%;
     }
-    
+
     .home__img{
+      grid-area: img;
       order: 1;
       width: 375px;
       height: 289px;
+      margin-top: -4%;
     }
   
     .home__img img{
@@ -251,4 +272,8 @@ img{
     .home__img img{
       width: 604px;
     }
+}
+.footer{
+    background-color: var(--first-color);
+    color: var(--dark-color);
 }

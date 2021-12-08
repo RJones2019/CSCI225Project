@@ -1,117 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Box Icons Style Sheets-->
-    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
-   
-    <title>Aviator Gaming Highlights</title>
-</head>
-<style>
-    .content {
-      max-width: 500px;
-      margin: auto;
-    }
-    * {
-  box-sizing: border-box;
-}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Introducing The Webpage -->
+        <title>Aviator Gaming Highlights</title>
+        <!-- Bootstrap CSS Style Sheet -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Box Icons Style Sheets-->
+        <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+        <!-- regular style sheet -->
+        <link rel="stylesheet" href="css/secondPage.css">
+    </head>
 
-/* Position the image container (needed to position the left and right arrows) */
-.gallery {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 400;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-    </style>
 <body>
-    <div class="content">
+    <!-- Header -->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+          <div>
+              <a href="home.html" class="nav__logo">AVIATOR GAMING</a>
+          </div>
+          <div class="nav__toggle" id="nav-toggle">
+              <i class='bx bx-menu'></i>
+          </div>
+
+          <div class="nav__menu" id="nav-menu">
+              <div class="nav__close" id="nav-close">
+                  <i class='bx bx-x'></i>
+              </div>
+
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="home.html" class="nav__link">Home</a></li>
+                  <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                  <li class="nav__item"><a href="introductions.html" class="nav__link">Introductions</a></li>
+                  <li class="nav__item"><a href="highlights.html" class="nav__link">Highlights</a></li>
+                  <li class="nav__item"><a href="jointheteam.html" class="nav__link">Join</a></li>
+                  <li class="nav__item"><a href="commentsform.html" class="nav__link">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+
+  <div class="divider"> </div>
+
+    <div class="contentHighlight">
     <div class="videos">
-        <h1>AviatorGaming Highlights</h1>
+        <h1>Aviator Gaming Highlights</h1>
         <p>
             All gaming content shown on this website was done by the players of
             AviatorGaming. Any content may be used for educational or professional purposes 
-            but not for monitary gain. Please contact us if you have any questions!
-        </p>
+            but not for monetary gain. Please contact us if you have any questions!
+        </p> <br>
         <div class = "Ghost">
         <h1>
-            Ghost Highlights
+            Our Highlights
         </h1>
         <div class="gallary">
             <div class="mySlides">
@@ -126,8 +68,7 @@
             </div>
             <div class="mySlides">
                 <div class="numbertext">3 / 6</div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/3-lW0B6V7h8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RURMmXw-F8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="mySlides">
                 <div class="numbertext">4 / 6</div>
@@ -136,34 +77,19 @@
             </div>
             <div class="mySlides">
                 <div class="numbertext">5 / 6</div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/FplOIXWuaJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/at4_H15GIsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             </div>
             <div class="mySlides">
                 <div class="numbertext">6 / 6</div>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Sf_Jxm_9Qo4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6uy9IAsT4x4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
     </div>
-    </div>
-    <div class = "Dawn">
-        <h1>
-            Dawn Highlights
-        </h1>
-        <p>
-
-        </p>
-    </div>
-    <div class = "Phantom">
-        <h1>
-            Phantom Highlights
-        </h1>
-        <p>
-
-        </p>
-    </div>
+    <br>
     <h1>Other Information</h1>
     <p>
         These videos were shot using Xbox One's share feature. This allows
@@ -175,7 +101,6 @@
         Adobe Premiere Pro works well for Windows as well as Mac users. Sony Vegas
         isn't recommended for beginners who aren't used to the layout of video editors
         For more information, the links to the developers websites are listed below.
-
     </p>
     <p>
        <a href="https://www.adobe.com/products/premiere.html">Adobe Premiere Pro</a> 
@@ -183,61 +108,58 @@
     <p>   
        <a href="https://www.apple.com/final-cut-pro/">Final Cut Pro</a>
     </p>
+    <br>
     <div class="music">
         <h1>This is music that we use for some of our videos</h1>
-        <h2><a href="https://soundcloud.com/nocopyrightsounds">NCS On SoundCloud</a></h2>
-        <p>This contributor distributes music for anybody to use for their content on YouTube or other platforms.
-            The contributor's work can be found by clicking the link above.
-            For use of his music in other gaming channels. Please check out the following 
-            channels below! Don't worry, we don't compete with them!
+        <p><a href="https://soundcloud.com/nocopyrightsounds">NCS On SoundCloud</a></p>
+        <p>
+          This contributor distributes music for anybody to use for their content on YouTube or other platforms.
+          The contributor's work can be found by clicking the link above.
+          For use of his music in other gaming channels. Please check out the following 
+          channels below! Don't worry, we don't compete with them!
         </p>
+        <br>
         <h1>Samples from NCS</h1>
         <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/210195404&color=%23080c12&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nocopyrightsounds" title="NCS" target="_blank" style="color: #cccccc; text-decoration: none;">NCS</a> · <a href="https://soundcloud.com/nocopyrightsounds/cartoon-why-we-lose-feat-coleman-trapp-ncs-release" title="Cartoon - Why We Lose (feat. Coleman Trapp) [NCS Release]" target="_blank" style="color: #cccccc; text-decoration: none;">Cartoon - Why We Lose (feat. Coleman Trapp) [NCS Release]</a></div>
         <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1124465080&color=%23080c12&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/nocopyrightsounds" title="NCS" target="_blank" style="color: #cccccc; text-decoration: none;">NCS</a> · <a href="https://soundcloud.com/nocopyrightsounds/jnathyn-rise-ncs-release" title="JNATHYN - Rise [NCS10 Release]" target="_blank" style="color: #cccccc; text-decoration: none;">JNATHYN - Rise [NCS10 Release]</a></div>
-    
-        <h2>SSSniperwolf</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3gp7TUs1-Tg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </div>
-       <h2>Faze Rug</h2>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/7_bU2mVroYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2>Ali-A</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KbfnQrL9lR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <div class="footer">
-        &copy; AviatorGaming 2021
     </div>
-</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 
 
-    <script>
-        var slideIndex = 1;
-showSlides(slideIndex);
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block";
-}
-    </script>
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+  }
+</script>
+</div>
+<div class="footer">
+  &copy; AviatorGaming 2021
+</div>
 </body>
 </html>
